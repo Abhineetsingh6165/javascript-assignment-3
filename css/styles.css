@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li.checked {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: green; /* Checked-off to-do items fade to green */
+    transition: color 0.5s;
+}
+
+li.deleted {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: red; /* Deleted to-do items fade to red before vanishing */
+    transition: opacity 0.5s, max-height 0.5s, padding 0.5s, margin 0.5s, border 0.5s, color 0.5s;
+}
